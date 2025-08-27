@@ -2,13 +2,50 @@ import { createTheme } from '@mui/material/styles';
 import type { ThemeOptions } from '@mui/material/styles';
 import { darkPalette, lightPalette } from './palettes';
 
-// Configuración base del tema con breakpoints personalizados
 const baseTheme: ThemeOptions = {
     typography: {
-        fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+        fontFamily: '"Rem Light", "Roboto", "Helvetica", "Arial", sans-serif',
         h1: {
+            fontFamily: '"Coast Black", "Roboto", "Helvetica", "Arial", sans-serif',
             fontSize: '2.5rem',
             fontWeight: 500,
+        },
+        h2: {
+            fontFamily: '"Coast Black", "Roboto", "Helvetica", "Arial", sans-serif',
+            fontSize: '2rem',
+            fontWeight: 500,
+        },
+        h3: {
+            fontFamily: '"Coast Black", "Roboto", "Helvetica", "Arial", sans-serif',
+            fontSize: '1.75rem',
+            fontWeight: 500,
+        },
+        h4: {
+            fontFamily: '"Coast Black", "Roboto", "Helvetica", "Arial", sans-serif',
+            fontSize: '1.5rem',
+            fontWeight: 500,
+        },
+        h5: {
+            fontFamily: '"Coast Black", "Roboto", "Helvetica", "Arial", sans-serif',
+            fontSize: '1.25rem',
+            fontWeight: 500,
+        },
+        h6: {
+            fontFamily: '"Coast Black", "Roboto", "Helvetica", "Arial", sans-serif',
+            fontSize: '1.1rem',
+            fontWeight: 500,
+        },
+        body1: {
+            fontFamily: '"Rem Light", "Roboto", "Helvetica", "Arial", sans-serif',
+            fontWeight: 300,
+        },
+        body2: {
+            fontFamily: '"Rem Light", "Roboto", "Helvetica", "Arial", sans-serif',
+            fontWeight: 300,
+        },
+        button: {
+            fontFamily: '"Rem Light", "Roboto", "Helvetica", "Arial", sans-serif',
+            fontWeight: 400,
         },
     },
     breakpoints: {

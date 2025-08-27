@@ -1,6 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import i18n from '../i18n/config'; // Asegúrate de usar la ruta correcta
-
+import i18n from '../i18n/config';
 type Language = 'es' | 'en';
 
 interface LanguageContextValue {

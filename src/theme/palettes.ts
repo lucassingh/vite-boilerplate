@@ -1,5 +1,7 @@
 // minimalistic palette
 
+import type { PaletteColor, PaletteColorOptions } from "@mui/material";
+
 /*
 export const lightPalette = {
   primary: {
@@ -42,43 +44,82 @@ export const darkPalette = {
 };
  */
 
-// modern palette
+declare module '@mui/material/styles' {
+    interface Palette {
+        tertiary: PaletteColor;
+        extra1: PaletteColor;
+        extra2: PaletteColor;
+    }
+    interface PaletteOptions {
+        tertiary?: PaletteColorOptions;
+        extra1?: PaletteColorOptions;
+        extra2?: PaletteColorOptions;
+    }
+}
+
+// RRM light palette
 
 export const lightPalette = {
     primary: {
-        main: '#3A4F6B', // Azul profundo
+        main: '#4972b2',
         contrastText: '#FFFFFF',
     },
     secondary: {
-        main: '#FF7E6B', // Coral vibrante
+        main: '#b63e81',
+        contrastText: '#FFFFFF',
+    },
+    tertiary: {
+        main: '#b63e81',
+        contrastText: '#FFFFFF',
+    },
+    extra1: {
+        main: '#fcb040',
+        contrastText: '#000000',
+    },
+    extra2: {
+        main: '#39b54a',
         contrastText: '#FFFFFF',
     },
     background: {
-        default: '#F5F7FA', // Gris claro neutro
+        default: '#F5F7FA',
         paper: '#FFFFFF',
     },
     text: {
-        primary: '#2D3748', // Gris azulado oscuro
-        secondary: '#4A5568', // Gris azulado
+        primary: '#1C1C1C',
+        secondary: '#4A5568',
     },
 };
 
+// RRM dark palette
+
 export const darkPalette = {
     primary: {
-        main: '#7FD1B9', // Verde menta
-        contrastText: '#1A202C',
+        main: '#5c8dd1',
+        contrastText: '#FFFFFF',
     },
     secondary: {
-        main: '#FFA07A', // Salmón claro
-        contrastText: '#1A202C',
+        main: '#d14a9d',
+        contrastText: '#FFFFFF',
+    },
+    tertiary: {
+        main: '#d14a9d',
+        contrastText: '#FFFFFF',
+    },
+    extra1: {
+        main: '#ffc870',
+        contrastText: '#000000',
+    },
+    extra2: {
+        main: '#4ccf5c',
+        contrastText: '#FFFFFF',
     },
     background: {
-        default: '#1A202C', // Azul muy oscuro
-        paper: '#2D3748', // Azul grisáceo oscuro
+        default: '#121212',
+        paper: '#1E1E1E',
     },
     text: {
-        primary: '#EDF2F7',
-        secondary: '#CBD5E0',
+        primary: '#FFFFFF',
+        secondary: '#B0B0B0',
     },
 };
 

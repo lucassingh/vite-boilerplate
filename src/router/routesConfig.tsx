@@ -1,4 +1,4 @@
-import { AboutPage, HomePage } from "../pages";
+import { ContactPage, HomePage, NewsPage, RegionsPage, ResourcesPage } from "../pages";
 
 interface RouteConfig {
     path: string;
@@ -11,7 +11,19 @@ export const routes: RouteConfig[] = [
         element: <HomePage />,
     },
     {
-        path: "/about",
-        element: <AboutPage />,
+        path: "/news",
+        element: <NewsPage />,
+    },
+    {
+        path: "/regions",
+        element: <RegionsPage />,
+    },
+    {
+        path: "/resources",
+        element: <ResourcesPage />,
+    },
+    {
+        path: "/contact",
+        element: <ContactPage />,
     },
 ];
